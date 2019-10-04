@@ -50,15 +50,10 @@ public class MessageDuplicator {
         }
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
 
         MessageDuplicator messageDuplicator = new MessageDuplicator(args[0], args[1], args[2]);
-
-        try {
-            messageDuplicator.run();
-        }catch (Exception e){
-            System.out.println(e.getMessage());
-        }
+        messageDuplicator.run();
 
     }
 }
